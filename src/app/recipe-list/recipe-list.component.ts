@@ -8,13 +8,14 @@ import { RecipeService } from "../recipe.service";
 })
 export class RecipeListComponent implements OnInit {
   @Input() recipeList: any;
+
   constructor(private service: RecipeService) {}
   addToFavorites(favorite: any) {
-    console.log(favorite);
+    // console.log(favorite);
     this.service.addToFavorites(favorite);
   }
 
   ngOnInit(): void {
-    console.log(this.recipeList);
+    // console.log(this.recipeList);
   }
 }

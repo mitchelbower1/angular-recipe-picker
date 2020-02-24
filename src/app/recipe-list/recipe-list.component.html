@@ -1,7 +1,9 @@
 <a routerLink="/favorites"> Favorites</a>
 <ul>
   <li *ngFor="let recipe of recipeList">
-    <a [attr.href]="recipe.recipe.url" target="_blank">{{recipe.recipe.label}} </a>
+    <a [attr.href]="recipe.recipe.url" target="_blank"
+      >{{ recipe.recipe.label }}
+    </a>
     <button (click)="addToFavorites(recipe)">f</button>
   </li>
 </ul>

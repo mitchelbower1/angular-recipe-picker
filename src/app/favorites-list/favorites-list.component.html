@@ -1,5 +1,11 @@
 <ul>
-  <li *ngFor="let favorite of favorites">
-    <a [attr.href]="favorite.recipe.url" target="_blank">{{favorite.recipe.label}} </a>
+  <li *ngFor="let favorite of favorites; index as i">
+    <a [attr.href]="favorite.recipe.url" target="_blank"
+      >{{ favorite.recipe.label }}
+    </a>
+    <h3>Ingredients:</h3>
+    <p>{{ favorite.recipe.ingredientLines }}</p>
+    <button class="delete" (click)="deleteFavorite(i)">x</button>
   </li>
 </ul>
+<p *ngIf="favorites.length === 0">No Results Found</p>

@@ -20,6 +20,12 @@ export class RecipeService {
     return this.favorites;
   }
 
+  deleteFavorite(index: number) {
+    console.log(this.favorites);
+    this.favorites.splice(index, 1);
+    console.log(this.favorites);
+  }
+
   getData(
     search: string = "",
     dietary: string = "",
