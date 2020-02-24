@@ -1,0 +1,31 @@
+<main>
+  <h1>Recipe Search</h1>
+  <form #searchForm="ngForm" (ngSubmit)="getData(searchForm)">
+    <label for="health"> Health Restrictions </label>
+    <input
+      type="text"
+      id="health"
+      name="health"
+      placeholder="enter health restrictions"
+      ngModel
+    />
+    <label for="search"> Search </label>
+    <input
+      type="text"
+      id="search"
+      name="search"
+      placeholder="Search food idea"
+      ngModel
+    />
+    <label for="calories"> Calories </label>
+    <input
+      type="text"
+      id="calories"
+      name="calories"
+      placeholder="calories"
+      ngModel
+    />
+    <button class="search-recipe">Submit</button>
+  </form>
+  <app-recipe-list></app-recipe-list>
+</main>
