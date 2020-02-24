@@ -7,7 +7,19 @@ import { HttpClient } from "@angular/common/http";
 export class RecipeService {
   APP_KEY: string = "6f0d227d05f3790e45683d5cc566fa28";
   APP_ID: string = "e81cf42c";
+  favorites: any[] = [];
   constructor(private http: HttpClient) {}
+
+  addToFavorites(favorite: any) {
+    console.log(favorite);
+    this.favorites.push(favorite);
+    console.log(this.favorites);
+  }
+
+  getFavorites() {
+    return this.favorites;
+  }
+
   getData(
     search: string = "",
     dietary: string = "",

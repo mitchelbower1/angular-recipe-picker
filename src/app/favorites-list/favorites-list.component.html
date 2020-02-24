@@ -1,1 +1,5 @@
-<p>favorites-list works!</p>
+<ul>
+  <li *ngFor="let favorite of favorites">
+    <a [attr.href]="favorite.recipe.url" target="_blank">{{favorite.recipe.label}} </a>
+  </li>
+</ul>

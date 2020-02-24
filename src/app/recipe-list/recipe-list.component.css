@@ -1,0 +1,31 @@
+ul {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  max-width: 100px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+}
+
+button {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -10px;
+  right: -5px;
+  padding: 5px;
+  border: solid black 1px;
+}

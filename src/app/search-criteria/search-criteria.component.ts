@@ -8,6 +8,7 @@ import { NgForm } from "@angular/forms";
   styleUrls: ["./search-criteria.component.css"]
 })
 export class SearchCriteriaComponent implements OnInit {
+  recipes: any;
   constructor(private service: RecipeService) {}
 
   ngOnInit(): void {}
@@ -15,7 +16,8 @@ export class SearchCriteriaComponent implements OnInit {
     this.service
       .getData(form.value.search, form.value.health, form.value.calories)
       .subscribe(response => {
-        console.log(response);
+        this.recipes = response["hits"];
+        console.log(response["hits"]);
       });
   }
 }
