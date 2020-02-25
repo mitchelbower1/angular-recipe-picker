@@ -4,6 +4,8 @@
     </a>
     <img src="{{ favorite.recipe.image }}">
     <button class="delete" (click)="deleteFavorite(i)" class="fas fa-heart-broken"></button>
+    <button class="details" routerLink="/details">go to details</button>
   </li>
 </ul>
+
 <p *ngIf="favorites.length === 0">No Results Found</p>
