@@ -7,14 +7,14 @@ import { AppComponent } from "./app.component";
 import { SearchCriteriaComponent } from "./search-criteria/search-criteria.component";
 import { RecipeListComponent } from "./recipe-list/recipe-list.component";
 import { FavoritesListComponent } from "./favorites-list/favorites-list.component";
-import { from } from "rxjs";
+import { RecipeDetailsComponent } from "./recipe-details/recipe-details.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchCriteriaComponent,
     RecipeListComponent,
-
+    RecipeDetailsComponent,
     FavoritesListComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],

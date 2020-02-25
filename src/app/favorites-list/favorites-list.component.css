@@ -54,10 +54,19 @@ button {
   right: -16px;
   padding: 10px;
   border: solid black 1px;
-
 }
 
 .fa-heart-broken {
   color: red;
   font-size: 30px;
+}
+
+.details {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -11px;
+  left: -10px;
+  padding: 10px;
+  border: solid black 1px;
+
 }
