@@ -7,6 +7,10 @@ ul {
 a {
   text-decoration: none;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 li {
@@ -33,9 +37,13 @@ h3 {
 }
 
 p {
+  font-weight: 900;
+  font-size: xx-large;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 0px;
+  height: 80vh;
 }
 button {
   position: absolute;
