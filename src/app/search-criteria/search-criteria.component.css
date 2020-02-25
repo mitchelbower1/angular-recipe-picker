@@ -15,9 +15,9 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid #405d27;
+  border: 2px solid #405d27;
+  min-height: 270px;
   width: 30vw;
-  height: 30vh;
   padding: 40px;
   border-radius: 10px;
   background-color: white;
@@ -44,6 +44,7 @@ input {
 
 a {
   padding: 10px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -53,6 +54,7 @@ a {
 button {
   border-radius: 10px;
   padding: 10px;
+  margin: 10px;
   border: none;
   background-color: #405d27;
   color: white;
