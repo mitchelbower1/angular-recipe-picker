@@ -15,9 +15,9 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid gray;
+  border: 2px solid #405d27;
+  min-height: 270px;
   width: 30vw;
-  height: 30vh;
   padding: 40px;
   border-radius: 10px;
   background-color: white;
@@ -44,19 +44,28 @@ input {
 
 a {
   padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #405d27;
 }
 
 button {
   border-radius: 10px;
   padding: 10px;
+  margin: 10px;
   border: none;
   background-color: #405d27;
   color: white;
 }
 
-a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: gray;
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
 }
