@@ -8,6 +8,7 @@ export class RecipeService {
   APP_KEY: string = "6f0d227d05f3790e45683d5cc566fa28";
   APP_ID: string = "e81cf42c";
   favorites: any[] = [];
+  selectedRecipe: any;
   constructor(private http: HttpClient) {}
 
   addToFavorites(favorite: any) {
@@ -24,6 +25,14 @@ export class RecipeService {
     console.log(this.favorites);
     this.favorites.splice(index, 1);
     console.log(this.favorites);
+  }
+
+  setSelectedRecipe(recipe: any) {
+    this.selectedRecipe = recipe;
+  }
+
+  getSelectedRecipe() {
+    return this.selectedRecipe;
   }
 
   getData(

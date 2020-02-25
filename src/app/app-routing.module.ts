@@ -3,11 +3,12 @@ import { Routes, RouterModule } from "@angular/router";
 import { SearchCriteriaComponent } from "./search-criteria/search-criteria.component";
 
 import { FavoritesListComponent } from "./favorites-list/favorites-list.component";
+import { RecipeDetailsComponent } from "./recipe-details/recipe-details.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/search", pathMatch: "full" },
   { path: "search", component: SearchCriteriaComponent },
-
+  { path: "details", component: RecipeDetailsComponent },
   { path: "favorites", component: FavoritesListComponent },
   { path: "**", component: SearchCriteriaComponent }
 ];

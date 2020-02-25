@@ -8,6 +8,7 @@ import { RecipeService } from "../recipe.service";
 })
 export class FavoritesListComponent implements OnInit {
   favorites: any[];
+  route: any;
   constructor(private service: RecipeService) {}
 
   ngOnInit(): void {
@@ -15,5 +16,9 @@ export class FavoritesListComponent implements OnInit {
   }
   deleteFavorite(index: number) {
     this.service.deleteFavorite(index);
+  }
+  seeDetails(recipe: any) {
+    this.service.setSelectedRecipe(recipe);
+    this.route.navigate(["details"]);
   }
 }
