@@ -53,3 +53,10 @@ button {
   background-color: #405d27;
   color: white;
 }
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: gray;
+}

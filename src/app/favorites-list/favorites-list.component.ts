@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { RecipeService } from "../recipe.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-favorites-list",
@@ -9,7 +10,7 @@ import { RecipeService } from "../recipe.service";
 export class FavoritesListComponent implements OnInit {
   favorites: any[];
   route: any;
-  constructor(private service: RecipeService) {}
+  constructor(private service: RecipeService, private router: Router) {}
 
   ngOnInit(): void {
     this.favorites = this.service.getFavorites();
@@ -19,6 +20,6 @@ export class FavoritesListComponent implements OnInit {
   }
   seeDetails(recipe: any) {
     this.service.setSelectedRecipe(recipe);
-    this.route.navigate(["details"]);
+    this.router.navigate(["details"]);
   }
 }

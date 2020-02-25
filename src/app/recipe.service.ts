@@ -29,9 +29,12 @@ export class RecipeService {
 
   setSelectedRecipe(recipe: any) {
     this.selectedRecipe = recipe;
+    console.log(this.selectedRecipe);
   }
 
   getSelectedRecipe() {
+    console.log("here");
+    console.log(this.selectedRecipe);
     return this.selectedRecipe;
   }
 
@@ -40,7 +43,6 @@ export class RecipeService {
     dietary: string = "",
     caloriesAmount: string = ""
   ) {
-    // console.log(calories);
     return this.http.get("https://api.edamam.com/search", {
       params: {
         app_key: this.APP_KEY,

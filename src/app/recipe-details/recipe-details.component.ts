@@ -12,5 +12,6 @@ export class RecipeDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedRecipe = this.service.getSelectedRecipe();
+    console.log(this.selectedRecipe);
   }
 }
