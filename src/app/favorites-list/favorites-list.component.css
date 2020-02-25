@@ -47,7 +47,7 @@ p {
   height: 80vh;
 }
 
-button {
+.delete {
   position: absolute;
   border-radius: 50%;
   bottom: -31px;
@@ -68,7 +68,4 @@ button {
   left: -10px;
   padding: 10px;
   border: solid black 1px;
-}
-
-.new-search {
 }

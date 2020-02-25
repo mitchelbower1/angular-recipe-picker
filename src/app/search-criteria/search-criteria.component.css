@@ -15,7 +15,7 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid gray;
+  border: 1px solid #405d27;
   width: 30vw;
   height: 30vh;
   padding: 40px;
@@ -44,6 +44,10 @@ input {
 
 a {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #405d27;
 }
 
 button {
@@ -54,9 +58,12 @@ button {
   color: white;
 }
 
-a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: gray;
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
 }
