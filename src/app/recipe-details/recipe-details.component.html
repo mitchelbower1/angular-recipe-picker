@@ -1,7 +1,10 @@
 <div class="detailscard">
+  {{ selectedRecipe.recipe.label }}
+
   <h1>Ingredients</h1>
   <p>{{ selectedRecipe.recipe.ingredientLines }}</p>
 </div>
 
-<button routerLink="/favorites">back to favorites</button>
+<button routerLink="/favorites">Back to Favorites</button>
+
 <button routerLink="/search">New Search</button>
