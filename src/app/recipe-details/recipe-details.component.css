@@ -31,5 +31,6 @@ button {
     width: max-content;
     height: max-content;
     justify-content: left;
+    margin: 0px;
   }
 }
