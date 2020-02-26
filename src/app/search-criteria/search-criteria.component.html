@@ -4,31 +4,25 @@
     <label for="health"> Health Restrictions </label>
     <select name="health" id="health" ngModel>
       <option value="">Choose one</option>
-      <option value="dairy-free">Dairy Free</option>
-      <option value="fish-free">Fish Free</option>
-      <option value="gluten-free">Gluten Free</option>
-      <option value="keto-friendly">Keto Diet</option>
+      <option value="shellfish-free">Shellfish Free Diet</option>
+      <option value="tree-nut-free">Tree Nut Free Diet</option>
+      <option value="alcohol-free">Alcohol Free</option>
+      <option value="vegetarian">Vegetarian Diet</option>
       <option value="peanut-free">Peanut Free</option>
       <option value="vegan">Vegan Diet</option>
     </select>
 
     <label for="search"> Search </label>
-    <input
-      type="text"
-      id="search"
-      name="search"
-      placeholder="Search food idea"
-      ngModel
-    />
+    <input type="text" id="search" name="search" placeholder="Search food idea" ngModel />
 
     <label for="calories"> Calories </label>
     <select name="calories" id="calories" ngModel>
       <option value="">Choose calorie amount</option>
-      <option value="50-100">0-1000</option>
-      <option value="101-500">0-2000</option>
-      <option value="501-1000">0-3000</option>
-      <option value="1001-2000">0-4000</option>
-      <option value="2001-3000">0-5000</option>
+      <option value="0-1000">0-1000</option>
+      <option value="0-2000">0-2000</option>
+      <option value="0-2000">0-3000</option>
+      <option value="0-4000">0-4000</option>
+      <option value="0-5000">0-5000</option>
     </select>
     <button class="search-recipe">Submit</button>
   </form>
