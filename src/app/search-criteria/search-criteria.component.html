@@ -13,22 +13,16 @@
     </select>
 
     <label for="search"> Search </label>
-    <input
-      type="text"
-      id="search"
-      name="search"
-      placeholder="Search food idea"
-      ngModel
-    />
+    <input type="text" id="search" name="search" placeholder="Search food idea" ngModel />
 
     <label for="calories"> Calories </label>
     <select name="calories" id="calories" ngModel>
       <option value="">Choose calorie amount</option>
-      <option value="50-100">100-1000</option>
-      <option value="101-500">100-2000</option>
-      <option value="501-1000">100-3000</option>
-      <option value="1001-2000">100-4000</option>
-      <option value="2001-3000">100-5000</option>
+      <option value="50-100">0-1000</option>
+      <option value="101-500">0-2000</option>
+      <option value="501-1000">0-3000</option>
+      <option value="1001-2000">0-4000</option>
+      <option value="2001-3000">0-5000</option>
     </select>
     <button class="search-recipe">Submit</button>
     <a routerLink="/favorites"> Favorites</a>

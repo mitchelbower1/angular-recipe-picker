@@ -19,8 +19,27 @@ ul {
     margin-top: 40px;
   }
 
-  a {
+  li {
+    border: 1px solid #405d27;
+    margin: 10px;
+    padding: 5px;
+    max-width: 100px;
+    width: 100%;
+    flex: 1;
+    display: flex;
     text-decoration: none;
+    list-style: none;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+    box-shadow: 2px 7px 2px 0px rgba(0, 0, 0, 0.53);
+  }
+
+  li:hover {
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
   }
 
   li {
