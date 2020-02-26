@@ -30,6 +30,10 @@ li {
   position: relative;
   border-radius: 10px;
   text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
 }
 
 h3 {
@@ -54,11 +58,17 @@ p {
   right: -16px;
   padding: 10px;
   border: solid black 1px;
+  -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
 }
 
 .fa-heart-broken {
   color: red;
   font-size: 30px;
+  -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
 }
 
 .details {
@@ -68,4 +78,7 @@ p {
   left: -10px;
   padding: 10px;
   border: solid black 1px;
+  -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
 }
