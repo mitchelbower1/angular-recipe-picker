@@ -1,10 +1,18 @@
 div {
   display: flex;
   flex-direction: column;
-  /* align-content: center;
-    margin:auto; */
 }
 
+.image-container {
+  width: min-content;
+  height: min-content;
+  justify-content: center;
+  margin: auto;
+}
+
+/* p {
+  background-color: white;
+} */
 button {
   border-radius: 10px;
   padding: 10px;
@@ -12,11 +20,16 @@ button {
   background-color: #405d27;
   color: white;
   margin: 5px;
-  width: auto;
+  width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   button {
-    width: 100%;
+    width: auto;
+  }
+  .image-container {
+    width: max-content;
+    height: max-content;
+    justify-content: left;
   }
 }
