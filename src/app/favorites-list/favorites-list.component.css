@@ -47,6 +47,10 @@ p {
   height: 80vh;
 }
 
+img {
+  border-radius: 10px;
+}
+
 .delete {
   position: absolute;
   border-radius: 50%;
