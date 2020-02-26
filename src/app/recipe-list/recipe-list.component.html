@@ -1,8 +1,15 @@
 <ul>
   <li *ngFor="let recipe of recipeList">
-    <a [attr.href]="recipe.recipe.url" target="_blank"
+    <a
+      [attr.href]="recipe.recipe.url"
+      target="_blank"
+      title="click for details!"
       >{{ recipe.recipe.label }}
     </a>
-    <button (click)="addToFavorites(recipe)" class="fas fa-heart"></button>
+    <button
+      (click)="addToFavorites(recipe)"
+      class="fas fa-heart"
+      title="add to favorites!"
+    ></button>
   </li>
 </ul>
