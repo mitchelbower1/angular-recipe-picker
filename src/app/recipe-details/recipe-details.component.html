@@ -1,7 +1,14 @@
 <div class="detailscard">
-  <h1>Ingredients</h1>
+  <h1>{{ selectedRecipe.recipe.label }}</h1>
+  <div class="image-container">
+    <img src="{{ selectedRecipe.recipe.image }}" />
+  </div>
+  <h2>Ingredients:</h2>
   <p>{{ selectedRecipe.recipe.ingredientLines }}</p>
+  <h3>Health Labels:</h3>
+  <p>{{ selectedRecipe.recipe.healthLabels }}</p>
 </div>
 
-<button routerLink="/favorites">back to favorites</button>
+<button routerLink="/favorites">Back to Favorites</button>
+
 <button routerLink="/search">New Search</button>

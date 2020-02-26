@@ -50,6 +50,7 @@ a {
   justify-content: center;
   text-decoration: none;
   color: #405d27;
+  box-shadow: 2px 20px 8px 20px rgba(0, 0, 0, 0.53);
 }
 
 button {
@@ -59,6 +60,8 @@ button {
   border: none;
   background-color: #405d27;
   color: white;
+  font-size: x-large;
+  box-shadow: 0px 8px 5px 7px rgba(0, 0, 0, 0.53);
 }
 
 button:hover {
