@@ -1,21 +1,78 @@
+ul::-webkit-scrollbar {
+  display: none;
+}
+
 ul {
   display: flex;
-  overflow: auto;
+  flex-direction: column;
+  overflow-x: scroll;
   height: 150px;
 
   padding: 0;
   margin-top: 40px;
 }
 
-@media screen and (min-width: 480px) {
+li:hover {
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
+li {
+  border: 1px solid #405d27;
+  margin: 10px;
+  padding: 5px;
+  max-width: 100px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+}
+
+a {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -10px;
+  right: -11px;
+  padding: 7px;
+  border: solid black 1px;
+  background-color: white;
+}
+
+button:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fa-heart {
+  color: red;
+}
+
+@media screen and (min-width: 786px) {
+  ul::-webkit-scrollbar {
+    display: none;
+  }
+
   ul {
     display: flex;
+    flex-direction: row;
     overflow-x: scroll;
     width: 100%;
     height: 150px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    padding: 0;
+    padding-right: 0;
     margin-top: 40px;
   }
 
