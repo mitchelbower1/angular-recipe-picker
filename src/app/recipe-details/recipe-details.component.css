@@ -10,9 +10,10 @@ div {
   margin: auto;
 }
 
-/* p {
+p {
   background-color: white;
-} */
+}
+
 button {
   border-radius: 10px;
   padding: 10px;
@@ -27,6 +28,7 @@ button {
   button {
     width: auto;
   }
+
   .image-container {
     width: max-content;
     height: max-content;
