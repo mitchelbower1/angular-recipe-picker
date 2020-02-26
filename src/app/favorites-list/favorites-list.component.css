@@ -10,7 +10,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
+  font-size: 26px;
 }
 
 li {
@@ -33,7 +34,7 @@ li {
   background-color: white;
   -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
-  box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 9px 8px 3px 9px rgba(0, 0, 0, 0.53);
 }
 
 h3 {
@@ -68,7 +69,14 @@ p {
   font-size: 30px;
   -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
-  box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 9px 8px 3px 3px rgba(0, 0, 0, 0.53);
+}
+
+.fa-info {
+  bottom: -10px;
+  right: -5px;
+  color: red;
+  font-size: 30px;
 }
 
 .details {
@@ -81,4 +89,27 @@ p {
   -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
   box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  background-color: #006600de;
+  font-size: 30px;
+  -webkit-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 6px 2px 13px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 9px 8px 3px 3px rgba(0, 0, 0, 0.53);
+}
+
+button:hover {
+  background-color: #ffff99;
+}
+
+button:active {
+  background-color: #ffff99;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
 }

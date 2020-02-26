@@ -1,14 +1,22 @@
-<ul>
-  <li class="card" *ngFor="let favorite of favorites; index as i">
-    <a [attr.href]="favorite.recipe.url" target="_blank">{{ favorite.recipe.label }}
-    </a>
-    <img src="{{ favorite.recipe.image }}" />
-    <button class="delete" (click)="deleteFavorite(i)" class="fas fa-heart-broken"></button>
-    <button class="details" (click)="seeDetails(favorite)">
-      go to details
-    </button>
-  </li>
-</ul>
 <button class="new-search" routerLink="/search">New Search</button>
 
-<p *ngIf="favorites.length === 0">No Results Found</p>
+<ul>
+  <li class="card" *ngFor="let favorite of favorites; index as i">
+    <a [attr.href]="favorite.recipe.url" target="_blank"
+      >{{ favorite.recipe.label }}
+    </a>
+    <img src="{{ favorite.recipe.image }}" />
+    <button
+      class="delete"
+      (click)="deleteFavorite(i)"
+      class="fas fa-heart-broken"
+    ></button>
+    <button
+      class="details"
+      (click)="seeDetails(favorite)"
+      class="fas fa-info"
+    ></button>
+  </li>
+</ul>
+
+<p *ngIf="favorites.length === 0">No Favorites Yet!</p>
