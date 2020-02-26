@@ -18,7 +18,8 @@ a {
   justify-content: center;
   align-items: center;
   padding: 5px;
-  font-size: 26px;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 li {
