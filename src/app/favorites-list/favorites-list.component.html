@@ -2,20 +2,11 @@
 
 <ul>
   <li class="card" *ngFor="let favorite of favorites; index as i">
-    <a [attr.href]="favorite.recipe.url" target="_blank"
-      >{{ favorite.recipe.label }}
+    <a [attr.href]="favorite.recipe.url" target="_blank" title="Link to Webpage.">{{ favorite.recipe.label }}
     </a>
     <img src="{{ favorite.recipe.image }}" />
-    <button
-      class="delete"
-      (click)="deleteFavorite(i)"
-      class="fas fa-heart-broken"
-    ></button>
-    <button
-      class="details"
-      (click)="seeDetails(favorite)"
-      class="fas fa-info"
-    ></button>
+    <button class="delete" (click)="deleteFavorite(i)" class="fas fa-heart-broken" title="Click to Remove!"></button>
+    <button class="details" (click)="seeDetails(favorite)" class="fas fa-info" title="Click for Details!"></button>
   </li>
 </ul>
 

@@ -4,6 +4,12 @@ ul {
   width: 100%;
 }
 
+a:hover {
+  color: #ffff99;
+  background-color: #006600de;
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
   color: black;
