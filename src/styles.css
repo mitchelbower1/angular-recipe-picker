@@ -6,4 +6,5 @@
 body {
   background: linear-gradient(to bottom, #006600 0%, #ffff99 100%);
   background-repeat: no-repeat;
+  height: 100vh;
 }
